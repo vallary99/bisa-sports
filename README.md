@@ -25,10 +25,13 @@ Photos carry the brand, so every image must pass these tests:
 - **Who:** predominantly African children and coaches, in a Kenyan setting where possible.
 - **Light and crop:** warm natural light, tight crops that fill the frame edge to edge, never boxed in cards.
 - **One grade:** the `.grade` style in `globals.css` lifts contrast, mutes saturation and adds pitch-green shadows and grain, so stock and BISA's own photos look like one set.
-- **Coverage BISA needs to shoot:** a session for each sport, Stephen Biko coaching, the Braeburn pitches and courts, team huddles, and portrait-format clips for Instagram and TikTok.
+- **Coverage BISA needs to shoot:** a session for each sport, Steve Biko coaching, the Braeburn pitches and courts, team huddles, and portrait-format clips for Instagram and TikTok.
 
 ### Client-supplied sport photos
 The four sport images (football, cricket, rugby, tennis) on the homepage sports strip and the Programmes rows are files supplied by the client, stored in `public/img/photos/sport-*.webp`. Confirm BISA has the rights to use them commercially; if they came from Pinterest or a stock site, check the original licence.
+
+### BISA training photos
+Four of BISA's own session photos (speed and conditioning drills) are retouched and cropped in `public/img/photos/train-*.webp`: homepage values band (`train-run-out`), homepage venue (`train-venue`), About "How BISA trains" (`train-sprint`) and the Coaches hero side panel (`train-pair`). Retouch: crop per slot, gentle exposure and contrast lift, vibrance, light sharpening. Get parental consent on file for every young athlete pictured. The homepage intro photo (`intro-football.webp`) is also client-supplied.
 
 ### Photos currently used (Pexels licence, free for commercial use)
 Rule: people in photos are African children or teens. Where no suitable licensed photo of African young players exists (cricket, rugby, tennis), the slot shows that sport's pitch, court or equipment instead of a single non-African group.
@@ -45,7 +48,7 @@ Rule: people in photos are African children or teens. Where no suitable licensed
 | Programmes tennis row | Aerial view of a full tennis court | Ryan Searle (Unsplash) |
 | Tennis panel, row and page | Balls and racket on a court line | Pexels |
 
-Photos load through Pexels' CDN (`lib/image-url.ts`). Replace them with BISA's own session photos as soon as they exist, especially for cricket, rugby and tennis. Stephen Biko and the Braeburn venue keep labelled placeholders.
+Photos load through Pexels' CDN (`lib/image-url.ts`). Replace them with BISA's own session photos as soon as they exist, especially for cricket, rugby and tennis. Steve Biko and the Braeburn venue keep labelled placeholders.
 
 The age range (5 to 18, plus adults) appears once on the homepage hero and in the FAQs. Keep it out of other sections.
 
@@ -58,5 +61,5 @@ Social media appears as icons in the footer and the mobile menu. There is no Con
 - Instagram and TikTok links (`SITE.instagram`, `SITE.tiktok`), then set `socialConfirmed: true`.
 - Photos: BISA's own session photos (see Photography direction). Get written parental consent for every child pictured.
   Slot ids in `PHOTOS`: hero, football, tennis, team, cricket, rugby, coach-biko, venue, approach, coach-football/rugby/tennis.
-- Dashed "Add ..." notes mark missing content: founding story, vision, achievements, timetables, coach profiles, Stephen Biko's record.
+- Dashed "Add ..." notes mark missing content: founding story, vision, achievements, timetables, coach profiles, Steve Biko's record.
 - Hockey is on the crest but not in the source listing, so it is not on the site. Add it to `SPORTS` if offered.

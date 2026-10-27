@@ -19,7 +19,7 @@ export default function About() {
           <h2 id="story-title" className="text-h1" data-reveal>Our story</h2>
           <div className="grid max-w-[62ch] gap-4" data-reveal style={delay(1)}>
             <p className="text-lead leading-[1.55]">BISA delivers high-performance football, cricket, rugby and tennis training for young players, as well as adults seeking to advance their sport.</p>
-            <p>Its cricket programme is driven by Kenyan international cricketer Stephen Biko, giving players direct exposure to international experience, high-performance standards and meaningful mentorship.</p>
+            <p>Its cricket programme is driven by Kenyan international cricketer Steve Biko, giving players direct exposure to international experience, high-performance standards and meaningful mentorship.</p>
             <p><span className="todo">Add the BISA founding story: when and why the academy started, and the meaning behind the Biko name.</span></p>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function About() {
 
       <section className="sec on-light bg-white" aria-labelledby="approach-title">
         <div className="wrap grid items-center gap-[clamp(2.5rem,6vw,6rem)] lg:grid-cols-2">
-          <Frame><Photo id="football" label="a training drill" /></Frame>
+          <Frame><Photo id="train-sprint" label="a speed session with a coach" /></Frame>
           <div className="grid justify-items-start gap-6" data-reveal style={delay(1)}>
             <h2 id="approach-title" className="text-h1">How BISA trains</h2>
             <p className="max-w-[38ch] text-lead leading-[1.55]">Sessions are practical, intense and game focused.</p>

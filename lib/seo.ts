@@ -69,10 +69,24 @@ export function faqSchema(path: string, items: QA[]) {
 }
 
 export const BIKO = {
-  "@type": "Person", "@id": `${SITE.url}/coaches#stephen-biko`, name: "Stephen Biko",
-  description: "Kenyan international cricketer who leads the BISA Sports cricket programme.",
+  "@type": "Person", "@id": `${SITE.url}/coaches#steve-biko`, name: "Steve Biko",
+  jobTitle: "Head coach",
+  description: "Head coach of BISA Sports and a Kenyan international cricketer who leads the academy's cricket programme.",
   worksFor: { "@id": id("#academy") }, knowsAbout: "Cricket",
 };
+
+export const COACHES = [
+  BIKO,
+  {
+    "@type": "Person", "@id": `${SITE.url}/coaches#nathan-joshi`, name: "Nathan Joshi",
+    jobTitle: "Coach", worksFor: { "@id": id("#academy") },
+  },
+  {
+    "@type": "Person", "@id": `${SITE.url}/coaches#dennis-nyongesa`, name: "Dennis Nyongesa",
+    jobTitle: "Athletics and rugby coach", worksFor: { "@id": id("#academy") }, knowsAbout: ["Athletics", "Rugby"],
+    image: `${SITE.url}/img/photos/coach-dennis.webp`,
+  },
+];
 
 export function sportService(s: Sport) {
   const url = `${SITE.url}/programmes/${s.slug}`;

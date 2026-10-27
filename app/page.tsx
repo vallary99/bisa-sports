@@ -9,7 +9,7 @@ const DESC = "Football, cricket, rugby and tennis training for children aged 5 t
 export const metadata = pageMeta({ path: "/", title: TITLE, description: DESC });
 
 const REASONS: { icon: IconName; t: string; d: string }[] = [
-  { icon: "coach", t: "International-level coaching", d: "The cricket programme is driven by Kenyan international cricketer Stephen Biko, bringing high-performance standards and real mentorship to young players." },
+  { icon: "coach", t: "International-level coaching", d: "The cricket programme is driven by Kenyan international cricketer Steve Biko, bringing high-performance standards and real mentorship to young players." },
   { icon: "target", t: "Training built around the game", d: "Sessions are practical, intense and game focused. Players sharpen technique, decision making and conditioning in real match situations." },
   { icon: "people", t: "Character beyond sport", d: "BISA develops discipline, mental toughness, leadership and confidence, the qualities that carry children further in sport and in life." },
   { icon: "shield", t: "A secure, premium setting", d: `Training takes place at ${SITE.venue}, a safe environment where children can focus and keep improving.` },
@@ -45,8 +45,8 @@ export default function Home() {
               </div>
             </div>
             <div className="max-w-[300px] border-l-4 border-gold bg-white px-5 py-4 text-pitch" data-hero style={delay(2)}>
-              <strong className="block font-display text-[1.4rem] font-extrabold uppercase leading-none">Stephen Biko</strong>
-              <span className="mt-1.5 block text-[.9rem] leading-snug">Kenyan international cricketer, leading the BISA cricket programme</span>
+              <strong className="block font-display text-[1.4rem] font-extrabold uppercase leading-none">Steve Biko</strong>
+              <span className="mt-1.5 block text-[.9rem] leading-snug">Head coach and Kenyan international cricketer</span>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function Home() {
       {/* Values band over a full-bleed photo */}
       <section className="on-dark relative flex min-h-[80svh] items-end overflow-hidden bg-pitch text-cream" aria-labelledby="values-title">
         <div className="absolute inset-0" data-parallax="0.06" style={{ top: "-8%", bottom: "-8%" }}>
-          <Photo id="pitch-football" label="football pitch from above" grade="grade-deep" sizes="100vw" />
+          <Photo id="train-run-out" label="coach and athlete running a conditioning drill" grade="grade-deep" sizes="100vw" />
         </div>
         <div className="wrap relative z-[3] py-[clamp(4rem,9vw,7rem)]">
           <h2 id="values-title" className="text-[clamp(2.2rem,5vw,4rem)] leading-[.92]" data-reveal>
@@ -131,10 +131,10 @@ export default function Home() {
       {/* Coach */}
       <section className="sec on-light bg-white" aria-labelledby="coach-title">
         <div className="wrap grid items-center gap-[clamp(2.5rem,6vw,6rem)] lg:grid-cols-2">
-          <Frame accent><Photo id="coach-biko" label="Stephen Biko coaching a young cricketer" icon="cricket" tone="cream" /></Frame>
+          <Frame accent><Photo id="coach-biko" label="Steve Biko coaching a young cricketer" icon="cricket" tone="cream" /></Frame>
           <div className="grid justify-items-start gap-6" data-reveal style={delay(1)}>
             <h2 id="coach-title" className="text-h1">Coached by an international</h2>
-            <p className="max-w-[38ch] text-lead leading-[1.55]">BISA&apos;s cricket programme is driven by Kenyan international cricketer Stephen Biko.</p>
+            <p className="max-w-[38ch] text-lead leading-[1.55]">BISA is led by head coach Steve Biko, a Kenyan international cricketer who also drives the cricket programme.</p>
             <p className="max-w-[62ch]">Players get direct exposure to international experience, high-performance standards and meaningful mentorship. That elite exposure is what sets BISA apart.</p>
             <Link className="textlink" href="/coaches">Meet the coaches</Link>
           </div>

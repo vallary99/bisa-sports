@@ -54,10 +54,10 @@ export default async function SportPage({ params }: PageProps<"/programmes/[slug
       {s.slug === "cricket" && (
         <section className="sec on-light bg-white" aria-labelledby="biko-title">
           <div className="wrap grid items-center gap-[clamp(2.5rem,6vw,6rem)] lg:grid-cols-2">
-            <Frame accent><Photo id="coach-biko" label="Stephen Biko coaching cricket" icon="cricket" tone="cream" /></Frame>
+            <Frame accent><Photo id="coach-biko" label="Steve Biko coaching cricket" icon="cricket" tone="cream" /></Frame>
             <div className="grid justify-items-start gap-6" data-reveal style={delay(1)}>
-              <h2 id="biko-title" className="text-h1">Led by Stephen Biko</h2>
-              <p className="max-w-[38ch] text-lead leading-[1.55]">Kenyan international cricketer Stephen Biko drives BISA&apos;s cricket programme.</p>
+              <h2 id="biko-title" className="text-h1">Led by Steve Biko</h2>
+              <p className="max-w-[38ch] text-lead leading-[1.55]">Kenyan international cricketer Steve Biko drives BISA&apos;s cricket programme.</p>
               <p className="max-w-[62ch]">Young cricketers get direct exposure to international experience, high-performance standards and meaningful mentorship.</p>
               <Link className="textlink" href="/coaches">Meet the coaches</Link>
             </div>

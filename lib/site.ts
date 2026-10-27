@@ -53,11 +53,11 @@ export const SPORTS: Sport[] = [
   },
   {
     slug: "cricket", name: "Cricket", icon: "cricket",
-    card: "Led by Kenyan international cricketer Stephen Biko, with international standards from the first session.",
+    card: "Led by Kenyan international cricketer Steve Biko, with international standards from the first session.",
     title: "Kids Cricket Coaching in Mombasa",
     h1: ["Kids cricket coaching", "in Mombasa"],
-    meta: "Cricket coaching for ages 5 to 18 in Mombasa, led by Kenyan international cricketer Stephen Biko. Group and 1-on-1 sessions at Braeburn. Book on WhatsApp.",
-    intro: "BISA's cricket programme is driven by Kenyan international cricketer Stephen Biko. Players get direct exposure to international experience, high-performance standards and real mentorship, so they learn to train the right way from an early age.",
+    meta: "Cricket coaching for ages 5 to 18 in Mombasa, led by Kenyan international cricketer Steve Biko. Group and 1-on-1 sessions at Braeburn. Book on WhatsApp.",
+    intro: "BISA's cricket programme is driven by Kenyan international cricketer Steve Biko. Players get direct exposure to international experience, high-performance standards and real mentorship, so they learn to train the right way from an early age.",
   },
   {
     slug: "rugby", name: "Rugby", icon: "rugby",
@@ -89,7 +89,7 @@ export const getSport = (slug: string) => SPORTS.find((s) => s.slug === slug);
  * chosen to match that direction until BISA's own sessions are photographed. They are not
  * BISA players or venues, so never caption them as BISA. To use your own: put a file in
  * /public/img/photos/ and set src to "/img/photos/name.jpg". Get written parental consent
- * for every child pictured. Slots without an entry (Stephen Biko, the Braeburn venue)
+ * for every child pictured. Slots without an entry (Steve Biko, the Braeburn venue)
  * render a labelled placeholder. People in photos must be African children or teens, never a
  * single non-African group; where no suitable licensed photo exists (cricket, rugby, tennis)
  * the slot shows that sport's pitch, court or equipment instead.
@@ -131,6 +131,31 @@ export const PHOTOS: Record<string, PhotoDef> = {
     src: "/img/photos/cricket-hero.webp",
     alt: "Cricket helmet, ball and bat resting on the grass",
     credit: "Supplied by client (mirrored so the kit sits clear of the headline)", pos: "50% 55%",
+  },
+  "train-sprint": {
+    src: "/img/photos/train-sprint.webp",
+    alt: "A young athlete sprinting off the mark beside his coach during a speed session on grass",
+    credit: "Supplied by client", pos: "50% 40%",
+  },
+  "train-run-out": {
+    src: "/img/photos/train-run-out.webp",
+    alt: "A coach and a young athlete running a conditioning drill across an open grass field at dusk",
+    credit: "Supplied by client", pos: "50% 60%",
+  },
+  "train-pair": {
+    src: "/img/photos/train-pair.webp",
+    alt: "A coach racing a young athlete between marker cones during a speed and agility drill",
+    credit: "Supplied by client", pos: "50% 25%",
+  },
+  "venue": {
+    src: "/img/photos/train-venue.webp",
+    alt: "A coach and young athlete sprinting towards the camera across a school field, with cones laid out for the drill",
+    credit: "Supplied by client", pos: "40% 45%",
+  },
+  "coach-dennis": {
+    src: "/img/photos/coach-dennis.webp",
+    alt: "BISA coach Dennis Nyongesa smiling on a running track in a Kenya national team vest",
+    credit: "Melo Prime Studios (@MeloPrimeStudios)", pos: "50% 30%",
   },
   "intro-football": {
     src: "/img/photos/intro-football.webp",

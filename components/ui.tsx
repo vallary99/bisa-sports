@@ -104,14 +104,14 @@ export function Crumbs({ items }: { items: { name: string; href?: string }[] }) 
   );
 }
 
-export function PageHero({ title, srExtra, lead, crumbs, aside, photo, photoLabel, photoIcon }: { title: string[]; srExtra?: string; lead: string; crumbs: { name: string; href?: string }[]; aside?: ReactNode; photo?: string; photoLabel?: string; photoIcon?: IconName }) {
-  const hasPhoto = photo && PHOTOS[photo];
+export function PageHero({ title, srExtra, lead, crumbs, aside, photo, photoLabel, photoIcon, photoSide = false }: { title: string[]; srExtra?: string; lead: string; crumbs: { name: string; href?: string }[]; aside?: ReactNode; photo?: string; photoLabel?: string; photoIcon?: IconName; photoSide?: boolean }) {
+  const hasPhoto = !photoSide && photo && PHOTOS[photo];
   return (
     <section data-hero-root className={`relative flex items-end overflow-hidden pb-[clamp(4rem,8vw,6.5rem)] pt-[calc(var(--header-h)+clamp(5rem,10vw,8rem))] ${hasPhoto ? "on-dark min-h-[78svh] bg-pitch text-cream" : "on-light min-h-[64svh] bg-cream text-pitch"}`} aria-labelledby="page-title">
       {hasPhoto ? <Photo id={photo} label={photoLabel ?? ""} grade="grade-side" priority sizes="100vw" className="hero-photo" /> : <FieldLines dark />}
       {!hasPhoto && photo && (
-        <div className="absolute inset-y-0 right-0 hidden w-[42%] lg:block">
-          <Photo id={photo} label={photoLabel ?? ""} icon={photoIcon} />
+        <div className="absolute inset-y-0 right-0 hidden w-[42%] lg:block" data-hero-photo>
+          <Photo id={photo} label={photoLabel ?? ""} icon={photoIcon} priority={photoSide} sizes="42vw" />
         </div>
       )}
       <div className="wrap relative z-[3]">

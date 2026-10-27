@@ -12,7 +12,7 @@ export function GET() {
 - Venue: ${SITE.venue}, Mombasa, Kenya
 - Hours: ${SITE.hoursDisplay}
 - Sessions: KES ${kes(SITE.priceGroup)} for a 60-minute high-performance group session; KES ${kes(SITE.priceOne)} for a 1-on-1 elite development session
-- Cricket programme led by Kenyan international cricketer Stephen Biko
+- Coaches: Steve Biko (head coach, Kenyan international cricketer, leads the cricket programme), Nathan Joshi, Dennis Nyongesa (athletics and rugby coach)
 - Contact: WhatsApp or phone ${SITE.phoneDisplay}, email ${SITE.email}
 
 ## Pages
