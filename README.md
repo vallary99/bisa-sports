@@ -30,8 +30,8 @@ Photos carry the brand, so every image must pass these tests:
 ### Client-supplied sport photos
 The four sport images (football, cricket, rugby, tennis) on the homepage sports strip and the Programmes rows are files supplied by the client, stored in `public/img/photos/sport-*.webp`. Confirm BISA has the rights to use them commercially; if they came from Pinterest or a stock site, check the original licence.
 
-### BISA training photos
-Four of BISA's own session photos (speed and conditioning drills) are retouched and cropped in `public/img/photos/train-*.webp`: homepage values band (`train-run-out`), homepage venue (`train-venue`), About "How BISA trains" (`train-sprint`) and the Coaches hero side panel (`train-pair`). Retouch: crop per slot, gentle exposure and contrast lift, vibrance, light sharpening. Get parental consent on file for every young athlete pictured. The homepage intro photo (`intro-football.webp`) is also client-supplied.
+### Training photos (stock, Pexels)
+About "How BISA trains" and the Coaches hero use free Pexels photos of African youth football training: Roy Malahlela (coach instructing a young player, 38761310) and Alfredo Dacosta (young players at a team session, 35571154). Swap them for BISA's own session photos once the client supplies full-resolution originals. The homepage intro photo (`intro-football.webp`) , the venue photo (`venue-cricket.webp`, cricket nets) and the values band photo (`values-hands.webp`) are client-supplied.
 
 ### Photos currently used (Pexels licence, free for commercial use)
 Rule: people in photos are African children or teens. Where no suitable licensed photo of African young players exists (cricket, rugby, tennis), the slot shows that sport's pitch, court or equipment instead of a single non-African group.

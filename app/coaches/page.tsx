@@ -8,18 +8,16 @@ const DESC = "Meet the BISA Sports coaches in Mombasa: head coach and Kenyan int
 export const metadata = pageMeta({ path: PATH, title: TITLE, description: DESC });
 const CRUMBS = [{ name: "Home", href: "/" }, { name: "Coaches" }];
 
-type Coach = { id: string; name: string; role?: string; photo: string; icon: IconName; facts: { icon: IconName; text: string }[]; todo: string };
+type Coach = { id: string; name: string; role?: string; photo: string; icon: IconName; facts: { icon: IconName; text: string }[] };
 
 const TEAM: Coach[] = [
   {
     id: "nathan-joshi", name: "Nathan Joshi", photo: "coach-nathan", icon: "coach",
     facts: [],
-    todo: "Add Nathan's role, sports coached, credentials and an approved portrait.",
   },
   {
     id: "dennis-nyongesa", name: "Dennis Nyongesa", role: "Athletics and rugby coach", photo: "coach-dennis", icon: "rugby",
     facts: [],
-    todo: "Add Dennis's competitive record and coaching qualifications.",
   },
 ];
 
@@ -37,7 +35,6 @@ export default function Coaches() {
             <h2 id="biko-title" className="text-h1">Steve Biko</h2>
             <FactsList items={[{ icon: "coach", text: "Kenyan international cricketer" }, { icon: "cricket", text: "Drives the BISA cricket programme" }]} />
             <p className="max-w-[62ch]">As head coach, Steve gives BISA players direct exposure to international experience, high-performance standards and meaningful mentorship, so they learn to train the right way from an early age.</p>
-            <p><span className="todo">Add Steve&apos;s playing record, coaching qualifications and an approved portrait.</span></p>
             <Button href="/programmes/cricket" kind="green">Cricket programme</Button>
           </div>
         </div>
@@ -54,7 +51,6 @@ export default function Coaches() {
                   {c.role && <p className="kicker">{c.role}</p>}
                   <h3 id={`${c.id}-name`} className="text-h2 leading-none">{c.name}</h3>
                   {c.facts.length > 0 && <FactsList items={c.facts} />}
-                  <p><span className="todo">{c.todo}</span></p>
                 </div>
               </article>
             ))}

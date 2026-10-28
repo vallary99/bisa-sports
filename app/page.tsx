@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* Hero: the photograph leads, type sits on the play */}
       <section data-hero-root className="on-dark relative flex min-h-svh items-end overflow-hidden bg-pitch text-cream" aria-labelledby="hero-title">
-        <Photo id="hero" label="young footballers ready for practice" grade="grade-hero" priority sizes="100vw" className="hero-photo" />
+        <Photo id="home-hero" label="football hitting the back of the net" grade="grade-hero" priority sizes="100vw" className="hero-photo" />
         <div className="wrap relative z-[3] pb-[clamp(3.5rem,7vw,5.5rem)] pt-[calc(var(--header-h)+6rem)] [text-shadow:0_2px_24px_rgb(0_0_0/.28)]">
           <h1 id="hero-title" className="hero-title max-w-[11ch]">
             <Lines parts={["Built for", "game day"]} />
@@ -118,7 +118,7 @@ export default function Home() {
       {/* Values band over a full-bleed photo */}
       <section className="on-dark relative flex min-h-[80svh] items-end overflow-hidden bg-pitch text-cream" aria-labelledby="values-title">
         <div className="absolute inset-0" data-parallax="0.06" style={{ top: "-8%", bottom: "-8%" }}>
-          <Photo id="train-run-out" label="coach and athlete running a conditioning drill" grade="grade-deep" sizes="100vw" />
+          <Photo id="values-hands" label="team hands reaching together" grade="grade-deep" sizes="100vw" />
         </div>
         <div className="wrap relative z-[3] py-[clamp(4rem,9vw,7rem)]">
           <h2 id="values-title" className="text-[clamp(2.2rem,5vw,4rem)] leading-[.92]" data-reveal>
@@ -168,7 +168,7 @@ export default function Home() {
       <section className="on-light relative bg-cream" aria-labelledby="venue-title">
         <div className="grid lg:grid-cols-2">
           <div className="relative min-h-[380px] lg:order-2 lg:min-h-[600px]" data-reveal="mask">
-            <Photo id="venue" label="training at Braeburn International School Mombasa" icon="tennis" sizes="(max-width: 1024px) 100vw, 50vw" />
+            <Photo id="venue" label="cricket nets session at Braeburn" icon="cricket" sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
           <div className="sec flex items-center px-[clamp(1.25rem,4vw,3rem)] lg:pl-[max(clamp(1.25rem,4vw,3rem),calc((100vw-1240px)/2))]">
             <div className="grid justify-items-start gap-6" data-reveal>

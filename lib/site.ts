@@ -89,7 +89,7 @@ export const getSport = (slug: string) => SPORTS.find((s) => s.slug === slug);
  * chosen to match that direction until BISA's own sessions are photographed. They are not
  * BISA players or venues, so never caption them as BISA. To use your own: put a file in
  * /public/img/photos/ and set src to "/img/photos/name.jpg". Get written parental consent
- * for every child pictured. Slots without an entry (Steve Biko, the Braeburn venue)
+ * for every child pictured. Slots without an entry
  * render a labelled placeholder. People in photos must be African children or teens, never a
  * single non-African group; where no suitable licensed photo exists (cricket, rugby, tennis)
  * the slot shows that sport's pitch, court or equipment instead.
@@ -122,6 +122,11 @@ export const PHOTOS: Record<string, PhotoDef> = {
     alt: "Rugby ball resting on a grass field under a blue sky",
     credit: "Thomas Ronveaux, Pexels", pos: "50% 55%",
   },
+  "home-hero": {
+    src: "/img/photos/home-hero.webp",
+    alt: "Football hitting the back of the net",
+    credit: "Supplied by client (mirrored so the ball sits clear of the headline, 2x AI upscale)", pos: "38% 46%",
+  },
   "football-hero": {
     src: "/img/photos/football-hero.webp",
     alt: "Football hitting the back of the net under stadium floodlights",
@@ -133,24 +138,34 @@ export const PHOTOS: Record<string, PhotoDef> = {
     credit: "Supplied by client (mirrored so the kit sits clear of the headline)", pos: "50% 55%",
   },
   "train-sprint": {
-    src: "/img/photos/train-sprint.webp",
-    alt: "A young athlete sprinting off the mark beside his coach during a speed session on grass",
-    credit: "Supplied by client", pos: "50% 40%",
+    src: "pexels-38761310",
+    alt: "A coach giving one-on-one instruction to a young footballer during training",
+    credit: "Roy Malahlela, Pexels", pos: "50% 30%",
+  },
+  "values-hands": {
+    src: "/img/photos/values-hands.webp",
+    alt: "A team's hands reaching together into the centre of a circle against a blue sky",
+    credit: "Supplied by client (2x AI upscale)", pos: "50% 42%",
   },
   "train-run-out": {
-    src: "/img/photos/train-run-out.webp",
-    alt: "A coach and a young athlete running a conditioning drill across an open grass field at dusk",
-    credit: "Supplied by client", pos: "50% 60%",
+    src: "pexels-28735311",
+    alt: "A youth squad running a conditioning lap together on a sunlit dirt pitch",
+    credit: "Territory, Pexels", pos: "50% 60%",
   },
   "train-pair": {
-    src: "/img/photos/train-pair.webp",
-    alt: "A coach racing a young athlete between marker cones during a speed and agility drill",
-    credit: "Supplied by client", pos: "50% 25%",
+    src: "pexels-35571154",
+    alt: "Two young footballers sharing a laugh at a team training session on artificial turf",
+    credit: "Alfredo Dacosta, Pexels", pos: "50% 40%",
   },
   "venue": {
-    src: "/img/photos/train-venue.webp",
-    alt: "A coach and young athlete sprinting towards the camera across a school field, with cones laid out for the drill",
-    credit: "Supplied by client", pos: "40% 45%",
+    src: "/img/photos/venue-cricket.webp",
+    alt: "A young cricketer batting in the nets during a coached session, with cones and stumps set out",
+    credit: "Supplied by client (2x AI upscale)", pos: "50% 45%",
+  },
+  "coach-biko": {
+    src: "/img/photos/coach-biko.webp",
+    alt: "BISA head coach Steve Biko delivering a ball in a cricket match",
+    credit: "Supplied by client (retouched: umpire removed from the background)", pos: "35% 50%",
   },
   "coach-dennis": {
     src: "/img/photos/coach-dennis.webp",

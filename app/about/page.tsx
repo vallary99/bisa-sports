@@ -20,7 +20,6 @@ export default function About() {
           <div className="grid max-w-[62ch] gap-4" data-reveal style={delay(1)}>
             <p className="text-lead leading-[1.55]">BISA delivers high-performance football, cricket, rugby and tennis training for young players, as well as adults seeking to advance their sport.</p>
             <p>Its cricket programme is driven by Kenyan international cricketer Steve Biko, giving players direct exposure to international experience, high-performance standards and meaningful mentorship.</p>
-            <p><span className="todo">Add the BISA founding story: when and why the academy started, and the meaning behind the Biko name.</span></p>
           </div>
         </div>
       </section>
@@ -30,8 +29,6 @@ export default function About() {
           <div data-reveal>
             <h2 id="mission-title" className="text-h1">Mission</h2>
             <p className="mt-6 max-w-[38ch] text-lead leading-[1.55]">Develop athletes who perform under pressure and carry discipline, leadership and confidence beyond the pitch.</p>
-            <h2 className="mt-12 text-h2">Vision</h2>
-            <p className="mt-4"><span className="todo">Add BISA&apos;s vision statement, as approved by the academy.</span></p>
           </div>
           <Pillars items={[
             { t: "Elite coaching", d: "International experience, high-performance standards and real mentorship." },
@@ -64,7 +61,6 @@ export default function About() {
           <h2 id="impact-title" className="text-h1" data-reveal>Results and impact</h2>
           <div className="grid max-w-[62ch] gap-4" data-reveal style={delay(1)}>
             <p>Beyond physical excellence, BISA develops the qualities needed to compete and succeed at higher levels of sport and life.</p>
-            <p><span className="todo">Add verified achievements: tournament results, player selections, partnerships or community work.</span></p>
           </div>
         </div>
       </section>

@@ -25,9 +25,8 @@ export function WaButton({ children = "Chat on WhatsApp", msg, kind = "wa", clas
 
 function Placeholder({ label, icon, tone, className = "" }: { label: string; icon: IconName; tone?: "cream"; className?: string }) {
   return (
-    <div className={`ph absolute inset-0 ${tone === "cream" ? "ph-cream" : ""} ${className}`} role="img" aria-label={`Photo to come: ${label}`}>
+    <div className={`ph absolute inset-0 ${tone === "cream" ? "ph-cream" : ""} ${className}`} aria-hidden="true" data-label={label}>
       <Icon name={icon} className="ph-icon" />
-      <span className="ph-label">Photo to add: {label}</span>
     </div>
   );
 }

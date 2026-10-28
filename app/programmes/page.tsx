@@ -41,7 +41,6 @@ export default function Programmes() {
         <div className="wrap">
           <SectionHead id="sessions-title" title="Sessions and pricing">The same two session types run across every sport. {SITE.hoursDisplay}.</SectionHead>
           <SessionsBlock />
-          <p className="mt-6"><span className="todo">Add the weekly timetable per sport and age group, and any term or holiday camp packages.</span></p>
         </div>
       </section>
 

@@ -73,6 +73,7 @@ export const BIKO = {
   jobTitle: "Head coach",
   description: "Head coach of BISA Sports and a Kenyan international cricketer who leads the academy's cricket programme.",
   worksFor: { "@id": id("#academy") }, knowsAbout: "Cricket",
+  image: `${SITE.url}/img/photos/coach-biko.webp`,
 };
 
 export const COACHES = [

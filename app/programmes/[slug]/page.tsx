@@ -69,7 +69,6 @@ export default async function SportPage({ params }: PageProps<"/programmes/[slug
         <div className="wrap">
           <SectionHead id="price-title" title={`${s.name} sessions`}>Held at {SITE.venue}. {SITE.hoursDisplay}.</SectionHead>
           <SessionsBlock sport={n} />
-          <p className="mt-6"><span className="todo">Add {n} session days, times and age groups.</span></p>
         </div>
       </section>
 
